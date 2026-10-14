@@ -1,0 +1,180 @@
+%-------------------------------------------------------------------------------
+% Resume - Muhammad Shafa Adhitiya
+% Build: latexmk -pdf resume.tex   (or: make)
+%-------------------------------------------------------------------------------
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1.6cm,top=1.4cm,bottom=1.4cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+
+\hypersetup{
+  pdftitle={Muhammad Shafa Adhitiya - Resume},
+  pdfauthor={Muhammad Shafa Adhitiya},
+  pdfsubject={Resume},
+  pdfkeywords={Electrical Engineering, Embedded Systems, Instrumentation, UAV}
+}
+
+\definecolor{accent}{HTML}{1F4E79}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\raggedright
+
+% Section headings
+\titleformat{\section}
+  {\color{accent}\large\bfseries}{}{0em}{\MakeUppercase}[\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% Lists
+\setlist[itemize]{leftmargin=1.2em, label=\textbullet, topsep=2pt, itemsep=1pt, parsep=0pt}
+
+%-------------------------------------------------------------------------------
+% Commands
+%-------------------------------------------------------------------------------
+% \entry{Organization}{Location}{Role}{Dates}  -> Org / Dates, Role / Location
+\newcommand{\entry}[4]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & \hspace{1em}\textbf{#4} \\
+    \textit{#3} & \hspace{1em}\textit{\small #2} \\
+  \end{tabularx}\par\vspace{1pt}%
+}
+% \about{Short description of the organization}
+\newcommand{\about}[1]{{\small\color{darkgray}#1}\par}
+\newcommand{\entrygap}{\vspace{6pt}}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+%----------------------------------- HEADER ------------------------------------
+\begin{center}
+  {\Huge\bfseries MUHAMMAD SHAFA ADHITIYA}\\[6pt]
+  \footnotesize
+  \faPhone*\ \href{tel:+628117132215}{+62 811-7132-215} \enspace|\enspace
+  \faEnvelope\ \href{mailto:mshafaadhitiya@gmail.com}{mshafaadhitiya@gmail.com} \enspace|\enspace
+  \faLinkedin\ \href{https://linkedin.com/in/muhammadshafaadhitiya}{linkedin.com/in/muhammadshafaadhitiya} \enspace|\enspace
+  \faGithub\ \href{https://github.com/SlametTurbo}{github.com/SlametTurbo}
+\end{center}
+
+%----------------------------------- SUMMARY -----------------------------------
+\section{Summary}
+Electrical Engineering undergraduate at Universitas Gadjah Mada with interests in
+embedded systems, instrumentation, industrial automation, and UAV technology.
+Experienced in engineering projects, UAV research and development, and student
+leadership activities. Possesses strong analytical, problem-solving, and teamwork
+skills, with a passion for applying engineering knowledge to develop practical and
+innovative solutions.
+
+%---------------------------------- EDUCATION ----------------------------------
+\section{Education}
+% TODO: verify start date at UGM
+\entry{Universitas Gadjah Mada}{Yogyakarta, Indonesia}
+      {Bachelor of Engineering (S.T.) in Electrical Engineering}{2022 \textendash{} Present}
+\entrygap
+\entry{SMA Negeri 5 Palembang}{Palembang, Indonesia}
+      {High School Diploma}{Jul 2019 \textendash{} May 2022}
+
+%--------------------------------- EXPERIENCE ----------------------------------
+\section{Experience}
+\entry{Full Drone Solutions}{Yogyakarta, Indonesia}
+      {Engineer Intern}{Jan 2026 \textendash{} Apr 2026}
+\about{Engineering and manufacturing company specializing in integrated Unmanned
+Aerial Vehicle (UAV) solutions, including UAV development, spare parts supply,
+maintenance services, and after-sales support for industrial applications.}
+\begin{itemize}
+  \item Assisted in engineering and manufacturing projects related to Unmanned Aerial Vehicles (UAVs).
+  \item Supported the development and maintenance of UAV systems and components.
+  \item Contributed to technical operations involving spare parts, maintenance, and after-sales services.
+  \item Participated in the research and development (R\&D) of a UAV mapping prototype, contributing to system integration and performance evaluation.
+  \item Collaborated with engineers in designing and refining UAV solutions for industrial applications.
+\end{itemize}
+\entrygap
+
+\entry{PT Pupuk Sriwidjaja Palembang (PUSRI)}{Palembang, Indonesia}
+      {Instrumentation Engineer Intern}{Jan 2024 \textendash{} Feb 2024}
+\about{One of Indonesia's leading fertilizer manufacturers and a subsidiary of
+PT Pupuk Indonesia, operating large-scale fertilizer production facilities that
+support the agricultural sector.}
+\begin{itemize}
+  \item Assisted in the maintenance, calibration, and troubleshooting of industrial instrumentation systems.
+  \item Supported the inspection and monitoring of process control instruments, including sensors, transmitters, and control valves.
+  \item Participated in preventive and corrective maintenance activities to ensure the reliability and safety of plant operations.
+  \item Collaborated with engineers and technicians in analyzing instrumentation performance and operational issues.
+  \item Gained practical experience in industrial automation, process control systems, and instrumentation engineering in a large-scale fertilizer manufacturing environment.
+\end{itemize}
+
+%------------------------------ COMMITTEE / EVENTS -----------------------------
+\section{Committee Experience}
+\entry{Technocorner UGM 2024}{Yogyakarta, Indonesia}
+      {Staff, Electrical Engineering Competition}{Nov 2023 \textendash{} Jul 2024}
+\about{Annual technology and academic event organized by the Electrical Engineering
+and Information Technology Student Association (KMTETI), featuring competitions,
+exhibitions, and technology-related programs.}
+\begin{itemize}
+  \item Developed competition problems and assessment materials.
+  \item Evaluated participants' submissions and performance.
+  \item Assisted in supervising and managing competition activities.
+  \item Contributed to the successful execution of one of Indonesia's largest student-led technology events.
+\end{itemize}
+\entrygap
+
+\entry{IKAGAMASS On Try Out UGM (InTO UGM) 2024}{Yogyakarta \textendash{} Palembang}
+      {Coordinator, Design, Documentation, and Decoration Division}{Jul 2023 \textendash{} Jan 2024}
+\about{Annual event organized by the South Sumatra Gadjah Mada Family Association
+(IKAGAMASS) to introduce Universitas Gadjah Mada to high school students in South
+Sumatra through academic tryouts and educational talk shows featuring
+national-level speakers.}
+\begin{itemize}
+  \item Led the design, decoration, and documentation processes throughout the event.
+  \item Designed promotional materials, social media content, and event decorations.
+  \item Increased audience engagement through effective visual communication and digital media strategies.
+  \item Coordinated a division of 10+ members to ensure smooth execution of event-related activities.
+\end{itemize}
+\entrygap
+
+\entry{IKAGAMASS On Try Out UGM (InTO UGM) 2023}{Yogyakarta \textendash{} Palembang}
+      {Staff, Design, Documentation, and Decoration Division}{Oct 2022 \textendash{} Jan 2023}
+\begin{itemize}
+  \item Designed promotional content for social media platforms.
+  \item Assisted in preparing event decorations and visual materials.
+  \item Supported documentation activities during the event.
+  \item Helped increase online engagement through creative visual designs.
+\end{itemize}
+
+%-------------------------- ORGANIZATIONAL EXPERIENCE --------------------------
+\section{Organizational Experience}
+% TODO: verify start date
+\entry{Keluarga Mahasiswa Teknik Elektro dan Teknologi Informasi (KMTETI)}{Yogyakarta, Indonesia}
+      {Staff, Student Advocacy and Welfare Division}{Present}
+\about{Student association of the Department of Electrical Engineering and
+Information Technology at Universitas Gadjah Mada, facilitating academic,
+professional, and student development activities.}
+\begin{itemize}
+  \item Assisted in advocating for students' academic and non-academic concerns within the department.
+  \item Supported the planning and implementation of student welfare programs and initiatives.
+  \item Served as a liaison between students and the department to help address student needs and feedback.
+  \item Contributed to activities aimed at improving student well-being, engagement, and academic experience.
+  \item Collaborated with other divisions to organize events and programs benefiting the student community.
+\end{itemize}
+\entrygap
+
+% TODO: verify end date
+\entry{Ikatan Keluarga Gadjah Mada Sumatera Selatan (IKAGAMASS)}{Palembang \textendash{} Yogyakarta}
+      {Executive Board Member, Media and Information Division (Medinfo)}{May 2023}
+\about{Regional student organization at Universitas Gadjah Mada that unites and
+supports UGM students from South Sumatra.}
+\begin{itemize}
+  \item Managed the organization's digital media platforms and communication channels.
+  \item Designed promotional and informational materials for organizational activities.
+  \item Strengthened organizational branding through consistent and engaging visual content.
+  \item Supported information dissemination and public relations initiatives.
+\end{itemize}
+
+\end{document}
